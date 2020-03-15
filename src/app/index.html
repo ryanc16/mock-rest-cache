@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Rest Cache</title>
+  <script src="./popup.bundle.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <h1>Mock Rest Cache</h1>
+    <div class="row">
+      <div class="col">
+        <form class="form">
+          <div class="form-group">
+            <label for="txtPath">Path</label>
+            <input id="txtPath" name="txtPath" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="optMethod">Method</label>
+            <select id="optMethod" name="optMethod">
+              <option value="GET">GET</option>
+              <option value="POST">POST</option>
+              <option value="PUT">PUT</option>
+              <option value="PATCH">PATCH</option>
+              <option value="DELETE">DELETE</option>
+              <option value="HEAD">HEAD</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="txtResponse">Response</label>
+            <textarea id="txtResponse" name="txtResponse" rows="5"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="numStatus">Status</label>
+            <input id="numStatus" name="numStatus" type="number" />
+          </div>
+          <button id="btnAdd">Add</button>
+        </form>
+        <ul id="lstStoredRequests" class="list-group"></ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

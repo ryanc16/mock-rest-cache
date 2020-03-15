@@ -1,0 +1,32 @@
+{
+  "name": "Mock Rest Cache",
+  "description": "Provides an in-browser rest request mock data store and cache",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+  },
+  "background": {
+    "scripts": [
+      "extension/background.bundle.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["extension/content.bundle.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Mock Rest Cache",
+    "default_popup": "app/index.html",
+    "default_icon": "app/assets/images/icon.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}

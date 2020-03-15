@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ES2015",
+    "lib": ["ES2015", "DOM"],
+    "outDir": "dist/",
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/web-ext-types"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "noImplicitUseStrict": true,
+    "alwaysStrict": false,
+    "esModuleInterop": false
+  },
+  "include": ["src/extension/**/*.ts", "src/app/content.ts"],
+  "exclude": ["node_modules/**/*"]
+}
